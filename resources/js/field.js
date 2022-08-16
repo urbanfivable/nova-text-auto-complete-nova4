@@ -1,5 +1,5 @@
 Nova.booting((Vue, router, store) => {
-    Vue.component('index-text-auto-complete', require('./components/IndexField'))
-    Vue.component('detail-text-auto-complete', require('./components/DetailField'))
-    Vue.component('form-text-auto-complete', require('./components/FormField'))
+    Nova.inertia('index-text-auto-complete', require('./components/IndexField').default)
+    Nova.inertia('detail-text-auto-complete', require('./components/DetailField').default)
+    Nova.inertia('form-text-auto-complete', require('./components/FormField').default)
 })
