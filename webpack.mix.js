@@ -1,3 +1,5 @@
+let mix = require('laravel-mix')
+
 require('./nova.mix')
 
 mix
@@ -6,4 +8,3 @@ mix
   .vue({ version: 3 })
   .sass('resources/sass/field.scss', 'css')
   .nova('gkermer/nova-text-auto-complete')
-  
