@@ -29,6 +29,14 @@ export default {
         availableItems: [],
     }),
 
+    created() {
+        console.log('FormField created()');
+    },
+
+    mounted() {
+        console.log('FormField mounted()');
+    },
+
     methods: {
         /**
          * Perform search

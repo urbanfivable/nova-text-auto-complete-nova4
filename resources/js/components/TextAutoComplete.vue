@@ -75,6 +75,10 @@ export default {
         trackBy: 'value',
     }),
 
+    created() {
+        console.log('TextAutoComplete created()');
+    },
+
     mounted() {
         console.log('TextAutoComplete mounted()');
         document.addEventListener('keydown', e => {
