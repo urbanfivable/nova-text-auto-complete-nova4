@@ -50,10 +50,12 @@
 import _ from 'lodash'
 import Vue from 'vue'
 import Popper from 'popper.js'
-import { mixin as clickaway } from 'vue3-click-away'
+import { directive } from "vue3-click-away";
 
 export default {
-    mixins: [clickaway],
+    directives: {
+      ClickAway: directive
+    },
     inheritAttrs: false,
     props: {
         value: '',
